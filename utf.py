@@ -111,6 +111,7 @@ class box:
 		'''Box Drawings: **U+252e**( ``┮`` ) - right heavy and leftdown light'''
 		lBr: _L["┰"] = "┰"
 		'''Box Drawings: **U+2530**( ``┰`` ) - down heavy and horizontal light'''
+		
 		LbR: _L["┯"] = "┯"
 		'''Box Drawings: **U+252f**( ``┯`` ) - down light and horizontal heavy'''
 		LBr: _L["┱"] = "┱"
@@ -174,6 +175,7 @@ class box:
 		'''Box Drawings: **U+2527**( ``┧`` ) - down heavy and left up light'''
 		tLb: _L["┥"] = "┥"
 		'''Box Drawings: **U+2525**( ``┥`` ) - vertical light and left heavy'''
+		
 		TlB: _L["┨"] = "┨"
 		'''Box Drawings: **U+2528**( ``┨`` ) - vertical heavy and left light'''
 		TLb: _L["┩"] = "┩"
@@ -237,6 +239,7 @@ class box:
 		'''Box Drawings: **U+2536**( ``┶`` ) - right heavy and left up light'''
 		lTr: _L["┸"] = "┸"
 		'''Box Drawings: **U+2538**( ``┸`` ) - up heavy and horizontal light'''
+		
 		LtR: _L["┷"] = "┷"
 		'''Box Drawings: **U+2537**( ``┷`` ) - up light and horizontal heavy'''
 		LTr: _L["┹"] = "┹"
@@ -301,6 +304,7 @@ class box:
 		'''Box Drawings: **U+251f**( ``┟`` ) - down heavy and right up light'''
 		tRb: _L["┝"] = "┝"
 		'''Box Drawings: **U+251d**( ``┝`` ) - vertical light and right heavy'''
+		
 		TrB: _L["┠"] = "┠"
 		'''Box Drawings: **U+2520**( ``┠`` ) - vertical heavy and right light'''
 		TRb: _L["┡"] = "┡"
@@ -440,12 +444,57 @@ class box:
 			LR: _L["═"] = "═"
 			'''Box Drawings: **U+2550**( ``═`` ) - double horizontal'''
 
-
-
 	class cr:
 		'''
 		"Cross" borders (all 4 directions)
 		'''
+
+		tlbr: _L["┼"] = "┼"
+		'''Box Drawings: **U+253c**( ``┼`` ) - light vertical and horizontal'''
+		Tlbr: _L["╀"] = "╀"
+		'''Box Drawings: **U+2540**( ``╀`` ) - up heavy and down horizontal light'''
+		tlBr: _L["╁"] = "╁"
+		'''Box Drawings: **U+2541**( ``╁`` ) - down heavy and up horizontal light'''
+		tLbr: _L["┽"] = "┽"
+		'''Box Drawings: **U+253d**( ``┽`` ) - left heavy and right vertical light'''
+		tlbR: _L["┾"] = "┾"
+		'''Box Drawings: **U+253e**( ``┾`` ) - right heavy and left vertical light'''
+
+		TlBr: _L["╂"] = "╂"
+		'''Box Drawings: **U+2542**( ``╂`` ) - vertical heavy and horizontal light'''
+		tLbR: _L["┿"] = "┿"
+		'''Box Drawings: **U+253f**( ``┿`` ) - vertical light and horizontal heavy'''
+		TLbr: _L["╃"] = "╃"
+		'''Box Drawings: **U+2543**( ``╃`` ) - left up heavy and right down light'''
+		tLBr: _L["╅"] = "╅"
+		'''Box Drawings: **U+2545**( ``╅`` ) - left down heavy and right up light'''
+		TlbR: _L["╄"] = "╄"
+		'''Box Drawings: **U+2544**( ``╄`` ) - right up heavy and left down light'''
+		tlBR: _L["╆"] = "╆"
+		'''Box Drawings: **U+2546**( ``╆`` ) - right down heavy and left up light'''
+		
+		TLBr: _L["╉"] = "╉"
+		'''Box Drawings: **U+2549**( ``╉`` ) - right light and left vertical heavy'''
+		TlBR: _L["╊"] = "╊"
+		'''Box Drawings: **U+254a**( ``╊`` ) - left light and right vertical heavy'''
+		TLbR: _L["╇"] = "╇"
+		'''Box Drawings: **U+2547**( ``╇`` ) - down light and up horizontal heavy'''
+		tLBR: _L["╈"] = "╈"
+		'''Box Drawings: **U+2548**( ``╈`` ) - up light and down horizontal heavy'''
+		TLBR: _L["╋"] = "╋"
+		'''Box Drawings: **U+254b**( ``╋`` ) - heavy vertical and horizontal'''
+
+		class D:
+			'''
+			"Cross" borders (all 4 directions)
+			'''
+
+			TlBr: _L["╫"] = "╫"
+			'''Box Drawings: **U+256b**( ``╫`` ) - vertical double and horizontal single'''
+			tLbR: _L["╪"] = "╪"
+			'''Box Drawings: **U+256a**( ``╪`` ) - vertical single and horizontal double'''
+			TLBR: _L["╬"] = "╬"
+			'''Box Drawings: **U+256c**( ``╬`` ) - double vertical and horizontal'''
 
 	class ot:
 		'''
