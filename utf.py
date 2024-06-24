@@ -103,12 +103,40 @@ class box:
 		Top-side borders
 		'''
 
+		lbr: _L["┬"] = "┬"
+		'''Box Drawings: **U+252c**( ``┬`` ) - light down and horizontal'''
+		Lbr: _L["┭"] = "┭"
+		'''Box Drawings: **U+252d**( ``┭`` ) - left heavy and right down light'''
+		lbR: _L["┮"] = "┮"
+		'''Box Drawings: **U+252e**( ``┮`` ) - right heavy and leftdown light'''
+		lBr: _L["┰"] = "┰"
+		'''Box Drawings: **U+2530**( ``┰`` ) - down heavy and horizontal light'''
+		LbR: _L["┯"] = "┯"
+		'''Box Drawings: **U+252f**( ``┯`` ) - down light and horizontal heavy'''
+		LBr: _L["┱"] = "┱"
+		'''Box Drawings: **U+2531**( ``┱`` ) - right light and left down heavy'''
+		lBR: _L["┲"] = "┲"
+		'''Box Drawings: **U+2532**( ``┲`` ) - left light and right down heavy'''
+		LBR: _L["┳"] = "┳"
+		'''Box Drawings: **U+2533**( ``┳`` ) - heavy down and horizontal'''
+		
+		class D:
+			'''
+			Top-side borders with double lines
+			'''
+
+			LbR: _L["╤"] = "╤"
+			'''Box Drawings: **U+2564**( ``╤`` ) - down single and horizontal double'''
+			lBr: _L["╥"] = "╥"
+			'''Box Drawings: **U+2565**( ``╥`` ) - down double and horizontal single'''
+			LBR: _L["╦"] = "╦"
+			'''Box Drawings: **U+2566**( ``╦`` ) - double down and horizontal'''
+
 	class tr:
 		'''
 		Top-right corners
 		'''
 
-		##-------------------------Normal solid lines-------------------------##
 		bl: _L["┐"] = "┐"
 		'''Box Drawings: **U+2510**( ``┐`` ) - light down and left'''
 		bL: _L["┑"] = "┑"
@@ -120,133 +148,224 @@ class box:
 		
 		A: _L["╮"] = "╮"
 		'''Box Drawings: **U+256e**( ``╮`` ) - light arc down and left'''
+
 		class D:
 			'''
 			Top-right corners with double lines
 			'''
+
+			Bl: _L["╖"] = "╖"
+			'''Box Drawings: **U+2556**( ``╖`` ) - down double and left single'''
 			bL: _L["╕"] = "╕"
 			'''Box Drawings: **U+2555**( ``╕`` ) - down single and left double'''
 			BL: _L["╗"] = "╗"
 			'''Box Drawings: **U+2557**( ``╗`` ) - double down and left'''
-			Bl: _L["╖"] = "╖"
-			'''Box Drawings: **U+2556**( ``╖`` ) - down double and left single'''
-
 
 	class r:
 		'''
 		Right-side borders
 		'''
 
+		tlb: _L["┤"] = "┤"
+		'''Box Drawings: **U+2524**( ``┤`` ) - light vertical and left'''
+		Tlb: _L["┦"] = "┦"
+		'''Box Drawings: **U+2526**( ``┦`` ) - up heavy and left down light'''
+		tlB: _L["┧"] = "┧"
+		'''Box Drawings: **U+2527**( ``┧`` ) - down heavy and left up light'''
+		tLb: _L["┥"] = "┥"
+		'''Box Drawings: **U+2525**( ``┥`` ) - vertical light and left heavy'''
+		TlB: _L["┨"] = "┨"
+		'''Box Drawings: **U+2528**( ``┨`` ) - vertical heavy and left light'''
+		TLb: _L["┩"] = "┩"
+		'''Box Drawings: **U+2529**( ``┩`` ) - down light and left up heavy'''
+		tLB: _L["┪"] = "┪"
+		'''Box Drawings: **U+252a**( ``┪`` ) - up light and left down heavy'''
+		TLB: _L["┫"] = "┫"
+		'''Box Drawings: **U+252b**( ``┫`` ) - heavy vertical and left'''
+
+		class D:
+			'''
+			Right-side borders with double lines
+			'''
+
+			TlB: _L["╢"] = "╢"
+			'''Box Drawings: **U+2562**( ``╢`` ) - vertical double and left single'''
+			tLb: _L["╡"] = "╡"
+			'''Box Drawings: **U+2561**( ``╡`` ) - vertical single and left double'''
+			TLB: _L["╣"] = "╣"
+			'''Box Drawings: **U+2563**( ``╣`` ) - double vertical and left'''
+
 	class br:
 		'''
 		Bottom-right corners
 		'''
 
-		##-------------------------Normal solid lines-------------------------##
 		tl: _L["┘"] = "┘"
 		'''Box Drawings: **U+2518**( ``┘`` ) - light up and left'''
+		Tl: _L["┚"] = "┚"
+		'''Box Drawings: **U+251a**( ``┚`` ) - up heavy and left light'''
 		tL: _L["┙"] = "┙"
 		'''Box Drawings: **U+2519**( ``┙`` ) - up light and left heavy'''
 		TL: _L["┛"] = "┛"
 		'''Box Drawings: **U+251b**( ``┛`` ) - heavy up and left'''
-		Tl: _L["┚"] = "┚"
-		'''Box Drawings: **U+251a**( ``┚`` ) - up heavy and left light'''
 		
 		A: _L["╯"] = "╯"
 		'''Box Drawings: **U+256f**( ``╯`` ) - light arc up and left'''
+
 		class D:
 			'''
 			Bottom-right corners with double lines
 			'''
+
+			Tl: _L["╜"] = "╜"
+			'''Box Drawings: **U+255c**( ``╜`` ) - up double and left single'''
 			tL: _L["╛"] = "╛"
 			'''Box Drawings: **U+255b**( ``╛`` ) - up single and left double'''
 			TL: _L["╝"] = "╝"
 			'''Box Drawings: **U+255d**( ``╝`` ) - double up and left'''
-			Tl: _L["╜"] = "╜"
-			'''Box Drawings: **U+255c**( ``╜`` ) - up double and left single'''
 
 	class b:
 		'''
 		Bottom-side borders
 		'''
 
+		ltr: _L["┴"] = "┴"
+		'''Box Drawings: **U+2534**( ``┴`` ) - light up and horizontal'''
+		Ltr: _L["┵"] = "┵"
+		'''Box Drawings: **U+2535**( ``┵`` ) - left heavy and right up light'''
+		ltR: _L["┶"] = "┶"
+		'''Box Drawings: **U+2536**( ``┶`` ) - right heavy and left up light'''
+		lTr: _L["┸"] = "┸"
+		'''Box Drawings: **U+2538**( ``┸`` ) - up heavy and horizontal light'''
+		LtR: _L["┷"] = "┷"
+		'''Box Drawings: **U+2537**( ``┷`` ) - up light and horizontal heavy'''
+		LTr: _L["┹"] = "┹"
+		'''Box Drawings: **U+2539**( ``┹`` ) - right light and left up heavy'''
+		lTR: _L["┺"] = "┺"
+		'''Box Drawings: **U+253a**( ``┺`` ) - left light and right up heavy'''
+		LTR: _L["┻"] = "┻"
+		'''Box Drawings: **U+253b**( ``┻`` ) - heavy up and horizontal'''
+
+		class D:
+			'''
+			Bottom-side borders with double lines
+			'''
+
+			LtR: _L["╧"] = "╧"
+			'''Box Drawings: **U+2567**( ``╧`` ) - up single and horizontal double'''
+			lTr: _L["╨"] = "╨"
+			'''Box Drawings: **U+2568**( ``╨`` ) - up double and horizontal single'''
+			LTR: _L["╩"] = "╩"
+			'''Box Drawings: **U+2569**( ``╩`` ) - double up and horizontal'''
+
+
 	class bl:
 		'''
 		Bottom-left corners
 		'''
 
-		##-------------------------Normal solid lines-------------------------##
 		tr: _L["└"] = "└"
 		'''Box Drawings: **U+2514**( ``└`` ) - light up and right'''
+		Tr: _L["┖"] = "┖"
+		'''Box Drawings: **U+2516**( ``┖`` ) - up heavy and right light'''
 		tR: _L["┕"] = "┕"
 		'''Box Drawings: **U+2515**( ``┕`` ) - up light and right heavy'''
 		TR: _L["┗"] = "┗"
 		'''Box Drawings: **U+2517**( ``┗`` ) - heavy up and right'''
-		Tr: _L["┖"] = "┖"
-		'''Box Drawings: **U+2516**( ``┖`` ) - up heavy and right light'''
 		
 		A: _L["╰"] = "╰"
 		'''Box Drawings: **U+2570**( ``╰`` ) - light arc up and right'''
+		
 		class D:
 			'''
 			Bottom-left corners with double lines
 			'''
+
+			Tr: _L["╙"] = "╙"
+			'''Box Drawings: **U+2559**( ``╙`` ) - up double and right single'''
 			tR: _L["╘"] = "╘"
 			'''Box Drawings: **U+2558**( ``╘`` ) - up single and right double'''
 			TR: _L["╚"] = "╚"
 			'''Box Drawings: **U+255a**( ``╚`` ) - double up and right'''
-			Tr: _L["╙"] = "╙"
-			'''Box Drawings: **U+2559**( ``╙`` ) - up double and right single'''
 
 	class l:
 		'''
 		Left-side borders
 		'''
 
+		trb: _L["├"] = "├"
+		'''Box Drawings: **U+251c**( ``├`` ) - light vertical and right'''
+		Trb: _L["┞"] = "┞"
+		'''Box Drawings: **U+251e**( ``┞`` ) - up heavy and right down light'''
+		trB: _L["┟"] = "┟"
+		'''Box Drawings: **U+251f**( ``┟`` ) - down heavy and right up light'''
+		tRb: _L["┝"] = "┝"
+		'''Box Drawings: **U+251d**( ``┝`` ) - vertical light and right heavy'''
+		TrB: _L["┠"] = "┠"
+		'''Box Drawings: **U+2520**( ``┠`` ) - vertical heavy and right light'''
+		TRb: _L["┡"] = "┡"
+		'''Box Drawings: **U+2521**( ``┡`` ) - down light and right up heavy'''
+		tRB: _L["┢"] = "┢"
+		'''Box Drawings: **U+2522**( ``┢`` ) - up light and right down heavy'''
+		TRB: _L["┣"] = "┣"
+		'''Box Drawings: **U+2523**( ``┣`` ) - heavy vertical and right'''
+
+		class D:
+			'''
+			Left-side borders with double lines
+			'''
+
+			TrB: _L["╟"] = "╟"
+			'''Box Drawings: **U+255f**( ``╟`` ) - vertical double and right single'''
+			tRb: _L["╞"] = "╞"
+			'''Box Drawings: **U+255e**( ``╞`` ) - vertical single and right double'''
+			TRB: _L["╠"] = "╠"
+			'''Box Drawings: **U+2560**( ``╠`` ) - double vertical and right'''
+
+
 	class tl:
 		'''
 		Top-left corners
 		'''
 
-		##-------------------------Normal solid lines-------------------------##
 		br: _L["┌"] = "┌"
 		'''Box Drawings: **U+250c**( ``┌`` ) - light down and right'''
+		Br: _L["┎"] = "┎"
+		'''Box Drawings: **U+250e**( ``┎`` ) - down heavy and right light'''
 		bR: _L["┍"] = "┍"
 		'''Box Drawings: **U+250d**( ``┍`` ) - down light and right heavy'''
 		BR: _L["┏"] = "┏"
 		'''Box Drawings: **U+250f**( ``┏`` ) - heavy down and right'''
-		Br: _L["┎"] = "┎"
-		'''Box Drawings: **U+250e**( ``┎`` ) - down heavy and right light'''
 		
 		A: _L["╭"] = "╭"
 		'''Box Drawings: **U+256d**( ``╭`` ) - light arc down and right'''
+
 		class D:
 			'''
 			Top-left corners with double lines
 			'''
+			
+			Br: _L["╓"] = "╓"
+			'''Box Drawings: **U+2553**( ``╓`` ) - down double and rightsingle'''
 			bR: _L["╒"] = "╒"
 			'''Box Drawings: **U+2552**( ``╒`` ) - down single and right double'''
 			BR: _L["╔"] = "╔"
 			'''Box Drawings: **U+2554**( ``╔`` ) - double down and right'''
-			Br: _L["╓"] = "╓"
-			'''Box Drawings: **U+2553**( ``╓`` ) - down double and rightsingle'''
 
 	class tb:
 		'''
 		Top-to-bottom borders
 		'''
 
-		##-------------------------Normal solid lines-------------------------##
 		tb: _L["│"] = "│"
 		'''Box Drawings: **U+2502**( ``│`` ) - light vertical'''
+		Tb: _L["╿"] = "╿"
+		'''Box Drawings: **U+257f**( ``╿`` ) - heavy up and light down'''
 		tB: _L["╽"] = "╽"
 		'''Box Drawings: **U+257d**( ``╽`` ) - light up and heavy down'''
 		TB: _L["┃"] = "┃"
 		'''Box Drawings: **U+2503**( ``┃`` ) - heavy vertical'''
-		Tb: _L["╿"] = "╿"
-		'''Box Drawings: **U+257f**( ``╿`` ) - heavy up and light down'''
 
-		##-----------------------Partials / half lines------------------------##
 		t_: _L["╵"] = "╵"
 		'''Box Drawings: **U+2575**( ``╵`` ) - light up'''
 		T_: _L["╹"] = "╹"
@@ -256,17 +375,16 @@ class box:
 		B_: _L["╻"] = "╻"
 		'''Box Drawings: **U+257b**( ``╻`` ) - heavy down'''
 
-		##---------------------------Dashed lines-----------------------------##
 		d2: _L["╎"] = "╎"
 		'''Box Drawings: **U+254e**( ``╎`` ) - light double dash vertical'''
-		D2: _L["╏"] = "╏"
-		'''Box Drawings: **U+254f**( ``╏`` ) - heavy double dash vertical'''
 		d3: _L["┆"] = "┆"
 		'''Box Drawings: **U+2506**( ``┆`` ) - light triple dash vertical'''
-		D3: _L["┇"] = "┇"
-		'''Box Drawings: **U+2507**( ``┇`` ) - heavy triple dash vertical'''
 		d4: _L["┊"] = "┊"
 		'''Box Drawings: **U+250a**( ``┊`` ) - light quadruple dash vertical'''
+		D2: _L["╏"] = "╏"
+		'''Box Drawings: **U+254f**( ``╏`` ) - heavy double dash vertical'''
+		D3: _L["┇"] = "┇"
+		'''Box Drawings: **U+2507**( ``┇`` ) - heavy triple dash vertical'''
 		D4: _L["┋"] = "┋"
 		'''Box Drawings: **U+250b**( ``┋`` ) - heavy quadruple dash vertical'''
 		
@@ -274,6 +392,7 @@ class box:
 			'''
 			Top-to-bottom borders with double lines
 			'''
+
 			TB: _L["║"] = "║"
 			'''Box Drawings: **U+2551**( ``║`` ) - double vertical'''
 
@@ -282,17 +401,15 @@ class box:
 		Left-to-right borders
 		'''
 
-		##-------------------------Normal solid lines-------------------------##
 		lr: _L["─"] = "─"
 		'''Box Drawings: **U+2500**( ``─`` ) - light horizontal'''
+		Lr: _L["╾"] = "╾"
+		'''Box Drawings: **U+257e**( ``╾`` ) - heavy left and light right'''
 		lR: _L["╼"] = "╼"
 		'''Box Drawings: **U+257c**( ``╼`` ) - light left and heavy right'''
 		LR: _L["━"] = "━"
 		'''Box Drawings: **U+2501**( ``━`` ) - heavy horizontal'''
-		Lr: _L["╾"] = "╾"
-		'''Box Drawings: **U+257e**( ``╾`` ) - heavy left and light right'''
 
-		##-----------------------Partials / half lines------------------------##
 		l_: _L["╴"] = "╴"
 		'''Box Drawings: **U+2574**( ``╴`` ) - light left'''
 		L_: _L["╸"] = "╸"
@@ -302,17 +419,16 @@ class box:
 		R_: _L["╺"] = "╺"
 		'''Box Drawings: **U+257a**( ``╺`` ) - heavy right'''
 
-		##---------------------------Dashed lines-----------------------------##
 		d2: _L["╌"] = "╌"
 		'''Box Drawings: **U+254c**( ``╌`` ) - light double dash horizontal'''
-		D2: _L["┅"] = "┅"
-		'''Box Drawings: **U+2505**( ``┅`` ) - heavy triple dash horizontal'''
 		d3: _L["┄"] = "┄"
 		'''Box Drawings: **U+2504**( ``┄`` ) - light triple dashhorizontal'''
-		D3: _L["╍"] = "╍"
-		'''Box Drawings: **U+254d**( ``╍`` ) - heavy double dash horizontal'''
 		d4: _L["┈"] = "┈"
 		'''Box Drawings: **U+2508**( ``┈`` ) - light quadruple dash horizontal'''
+		D2: _L["┅"] = "┅"
+		'''Box Drawings: **U+2505**( ``┅`` ) - heavy triple dash horizontal'''
+		D3: _L["╍"] = "╍"
+		'''Box Drawings: **U+254d**( ``╍`` ) - heavy double dash horizontal'''
 		D4: _L["┉"] = "┉"
 		'''Box Drawings: **U+2509**( ``┉`` ) - heavy quadruple dash horizontal'''
 
@@ -320,7 +436,8 @@ class box:
 			'''
 			Left-to-right borders with double lines
 			'''
-			__: _L["═"] = "═"
+
+			LR: _L["═"] = "═"
 			'''Box Drawings: **U+2550**( ``═`` ) - double horizontal'''
 
 
