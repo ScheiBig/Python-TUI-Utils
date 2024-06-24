@@ -50,7 +50,7 @@ class box:
 
 	For example:
 
-	* ``"┌"`` is ``box.tl.tl``,
+	* ``"┌"`` is ``box.tl.br``,
 	* ``"├"`` is ``box.l.trb``.
 
 	Additionally, letter case (and count) is significant, as it denotes
@@ -108,6 +108,30 @@ class box:
 		Top-right corners
 		'''
 
+		##-------------------------Normal solid lines-------------------------##
+		bl: _L["┐"] = "┐"
+		'''Box Drawings: **U+2510**( ``┐`` ) - light down and left'''
+		bL: _L["┑"] = "┑"
+		'''Box Drawings: **U+2511**( ``┑`` ) - down light and left heavy'''
+		BL: _L["┓"] = "┓"
+		'''Box Drawings: **U+2513**( ``┓`` ) - heavy down and left'''
+		Bl: _L["┒"] = "┒"
+		'''Box Drawings: **U+2512**( ``┒`` ) - down heavy and left light'''
+		
+		A: _L["╮"] = "╮"
+		'''Box Drawings: **U+256e**( ``╮`` ) - light arc down and left'''
+		class D:
+			'''
+			Top-right corners with double lines
+			'''
+			bL: _L["╕"] = "╕"
+			'''Box Drawings: **U+2555**( ``╕`` ) - down single and left double'''
+			BL: _L["╗"] = "╗"
+			'''Box Drawings: **U+2557**( ``╗`` ) - double down and left'''
+			Bl: _L["╖"] = "╖"
+			'''Box Drawings: **U+2556**( ``╖`` ) - down double and left single'''
+
+
 	class r:
 		'''
 		Right-side borders
@@ -117,6 +141,29 @@ class box:
 		'''
 		Bottom-right corners
 		'''
+
+		##-------------------------Normal solid lines-------------------------##
+		tl: _L["┘"] = "┘"
+		'''Box Drawings: **U+2518**( ``┘`` ) - light up and left'''
+		tL: _L["┙"] = "┙"
+		'''Box Drawings: **U+2519**( ``┙`` ) - up light and left heavy'''
+		TL: _L["┛"] = "┛"
+		'''Box Drawings: **U+251b**( ``┛`` ) - heavy up and left'''
+		Tl: _L["┚"] = "┚"
+		'''Box Drawings: **U+251a**( ``┚`` ) - up heavy and left light'''
+		
+		A: _L["╯"] = "╯"
+		'''Box Drawings: **U+256f**( ``╯`` ) - light arc up and left'''
+		class D:
+			'''
+			Bottom-right corners with double lines
+			'''
+			tL: _L["╛"] = "╛"
+			'''Box Drawings: **U+255b**( ``╛`` ) - up single and left double'''
+			TL: _L["╝"] = "╝"
+			'''Box Drawings: **U+255d**( ``╝`` ) - double up and left'''
+			Tl: _L["╜"] = "╜"
+			'''Box Drawings: **U+255c**( ``╜`` ) - up double and left single'''
 
 	class b:
 		'''
@@ -128,6 +175,29 @@ class box:
 		Bottom-left corners
 		'''
 
+		##-------------------------Normal solid lines-------------------------##
+		tr: _L["└"] = "└"
+		'''Box Drawings: **U+2514**( ``└`` ) - light up and right'''
+		tR: _L["┕"] = "┕"
+		'''Box Drawings: **U+2515**( ``┕`` ) - up light and right heavy'''
+		TR: _L["┗"] = "┗"
+		'''Box Drawings: **U+2517**( ``┗`` ) - heavy up and right'''
+		Tr: _L["┖"] = "┖"
+		'''Box Drawings: **U+2516**( ``┖`` ) - up heavy and right light'''
+		
+		A: _L["╰"] = "╰"
+		'''Box Drawings: **U+2570**( ``╰`` ) - light arc up and right'''
+		class D:
+			'''
+			Bottom-left corners with double lines
+			'''
+			tR: _L["╘"] = "╘"
+			'''Box Drawings: **U+2558**( ``╘`` ) - up single and right double'''
+			TR: _L["╚"] = "╚"
+			'''Box Drawings: **U+255a**( ``╚`` ) - double up and right'''
+			Tr: _L["╙"] = "╙"
+			'''Box Drawings: **U+2559**( ``╙`` ) - up double and right single'''
+
 	class l:
 		'''
 		Left-side borders
@@ -137,6 +207,29 @@ class box:
 		'''
 		Top-left corners
 		'''
+
+		##-------------------------Normal solid lines-------------------------##
+		br: _L["┌"] = "┌"
+		'''Box Drawings: **U+250c**( ``┌`` ) - light down and right'''
+		bR: _L["┍"] = "┍"
+		'''Box Drawings: **U+250d**( ``┍`` ) - down light and right heavy'''
+		BR: _L["┏"] = "┏"
+		'''Box Drawings: **U+250f**( ``┏`` ) - heavy down and right'''
+		Br: _L["┎"] = "┎"
+		'''Box Drawings: **U+250e**( ``┎`` ) - down heavy and right light'''
+		
+		A: _L["╭"] = "╭"
+		'''Box Drawings: **U+256d**( ``╭`` ) - light arc down and right'''
+		class D:
+			'''
+			Top-left corners with double lines
+			'''
+			bR: _L["╒"] = "╒"
+			'''Box Drawings: **U+2552**( ``╒`` ) - down single and right double'''
+			BR: _L["╔"] = "╔"
+			'''Box Drawings: **U+2554**( ``╔`` ) - double down and right'''
+			Br: _L["╓"] = "╓"
+			'''Box Drawings: **U+2553**( ``╓`` ) - down double and rightsingle'''
 
 	class tb:
 		'''
@@ -241,3 +334,10 @@ class box:
 		'''
 		Other borders (diagonals)
 		'''
+
+		J: _L["╱"] = "╱"
+		'''Box Drawings: **U+2571**( ``╱`` ) - light diagonal upper right to lower left'''
+		L: _L["╲"] = "╲"
+		'''Box Drawings: **U+2572**( ``╲`` ) - light diagonal upper left to lower right'''
+		X: _L["╳"] = "╳"
+		'''Box Drawings: **U+2573**( ``╳`` ) - light diagonal cross'''
